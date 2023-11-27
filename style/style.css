@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .title a{
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn a{
+    padding: 10px;
+    border-radius: 10px;
+    background: green;
+    color: white;
+    text-decoration: none;
+}
+
+.jumbotron{
+    width: 100%;
+    height: 100vh;
+    background: url(https://wallpapers.com/images/hd/4k-beach-waves-on-shore-rryhytfjbfh3uo2n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron .wrapper, .about .wrapper{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron .wrapper h1{
+    font-size: 50px;
+    color: white;
+}
+
+.jumbotron .wrapper p{
+    text-align: center;
+    width: 500px;
+    color: white;
+}
+
+.facility{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.facility .left{
+    width: 40%;
+    height: 500px;
+    position: relative;
+}
+
+.facility .left img#satu{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+.facility .left img#dua{
+    width: 60%;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    object-fit: cover;
+}
+
+.facility .left img{
+    border-radius: 10px;
+}
+
+.facility .right{
+    width: 40%;
+    padding: 30px;
+}
+
+.facility .right h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.facility .right p{
+    margin-bottom: 10px;
+}
+
+.facility ul li{
+    list-style: none;
+}
+
+.facility ul li i{
+    margin-right: 10px ;
+    color: green;
+}
+
+.room{
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.room .box{
+    width: 90%;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.room .item{
+    width: 300px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.room .item img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.room .item .flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.room .item .flex h2{
+    font-size: 18px;
+}
+
+.room .item p{
+    font-size: 13px;
+    padding: 10px;
+}
+
+.room .item .star{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.room .item .star i{
+    color: yellow;
+}
+
+.room .item .button a{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background: rgb(56, 171, 209);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 0;
+    padding-bottom: 150px;
+}
+
+.contact h2{
+    font-size: 30px;
+}
+
+.contact .box{
+    width: 75%;
+    position: relative;
+}
+
+.contact .box img{
+    width: 65%;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact .box form{
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.contact .box form h2{
+    font-size: 30px;
+}
+
+.contact .box form p{
+    font-size: 15px;
+}
+
+.contact .box form label{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .box form span{
+    font-weight: 500;
+}
+
+.contact .box form label input{
+    width: 100%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    outline: none;
+}
+
+.contact .box form label textarea{
+    resize: none;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+}
+
+.contact .box form button{
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    background: green;
+    border-radius: 10px;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(56, 171, 209);
+}
+
+footer .flex{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0
+}
+
+footer .flex .info .title{
+    font-size: 28px;
+    font-weight: 500;
+    color: green;
+}
+
+footer .flex .info .email{
+    font-size: 15px;
+    color: white;
+}
+
+footer .flex .navigation h3{
+    font-size: 20px;
+    color: white;
+}
+
+footer .flex .navigation ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+footer .flex .navigation ul li{
+    list-style: none;
+}
+
+footer .flex .navigation ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .cp{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://wallpapers.com/images/hd/4k-beach-waves-on-shore-rryhytfjbfh3uo2n.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .wrapper h2{
+    color: white;
+    font-size: 40px;
+}
+
+.about .wrapper p{
+    width: 350px;
+    text-align: center;
+    color: white;
+}
+
+form.book{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+form.book #hidden{
+    display: none;
+}
+
+form.book #kamar{
+    pointer-events: none;
+}
+form.book #total{
+    pointer-events: none;
+}
